@@ -1,5 +1,5 @@
 {
-  "name": "react-template",
+  "name": "messaging-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "colors": "^1.4.0",
     "eslint-plugin-unicorn": "^33.0.1"
   }
 }
