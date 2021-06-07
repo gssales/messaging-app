@@ -1,0 +1,56 @@
+//Generated with util/create-component.js
+@import "../../styles/colors.scss";
+
+.message {
+  padding: 8px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    padding: .8em .93em;
+    margin: 0;
+    min-width: 100px;
+    max-width: 350px;
+    min-height: 3em;
+    border-radius: 20px;
+  }
+
+  &.received .content {
+    align-self: flex-start;
+    color: white;
+    background-color: $color2;
+  }
+
+  &.sended .content {
+    align-self: flex-end;
+    color: black;
+    background-color: $color4;
+  }
+  
+  &.has-after {
+    padding-top: 4px;
+  }
+
+  &.has-before {
+    padding-bottom: 4px;
+  }
+  
+  &.has-after.received .content {
+    border-top-left-radius: 0;
+  }
+
+  &.has-before.received .content {
+    border-bottom-left-radius: 0;
+  }
+  
+  &.has-after.sended .content {
+    border-top-right-radius: 0;
+  }
+
+  &.has-before.sended .content {
+    border-bottom-right-radius: 0;
+  }
+}
+
+  
